@@ -22,7 +22,7 @@
 - 山大教字[2023]6号关于印发《山东大学本科毕业论文（设计）管理办法》的通知.pdf
 - GBT 7714-2015 信息与文献 参考文献著录规则.pdf
 
-本项目是基于[SDU_thesis_template_for_postgraduate_MonsterXia](https://github.com/cnDelbert/SDU_thesis_template_for_postgraduate)项目修改适配的的山东大学本科毕业论文模板。
+本项目是基于[SDU_thesis_template_for_postgraduate_MonsterXia](https://github.com/MonsterXia/Shandong-University-Undergraduate-Thesis-Design-Template)项目修改适配的的山东大学本科毕业论文模板。
 
 ### 联系
 
