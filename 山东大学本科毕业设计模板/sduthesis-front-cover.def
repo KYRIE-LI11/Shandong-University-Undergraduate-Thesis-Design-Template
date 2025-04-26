@@ -1,0 +1,69 @@
+\usepackage[AutoFakeBold=true, AutoFakeSlant=true]{xeCJK}
+\usepackage{fontspec}
+
+\newtoks\StuNum		     % 学号
+\newtoks\CThesisType     % 论文类型 中
+\newtoks\Ctitle		     % 中文标题
+\newtoks\Cauthor	     % 作者中文名
+\newtoks\Cmajor		     % 专业
+\newtoks\Csuperver	     % 导师
+\newtoks\Cdate		     % 中文日期
+\newtoks\Dpart		     % 学院
+\newtoks\Grade		     % 年级
+\newtoks\ThesisHeader	 % 正文页眉
+\newtoks\EThesisHeader   % 英文页眉
+
+\RequirePackage{makecell}
+\newcommand{\LeftLength}{2.3cm}
+\newcommand{\RightLength}{5.5cm}
+
+\setCJKfamilyfont{kt}[AutoFakeBold = {2.17}]{AR PL KaitiM GB}
+\setCJKfamilyfont{ktGB2312}{楷体_GB2312.ttf}
+
+
+\newcommand{\Mcs}[1]{\makebox[\LeftLength][s]{{\zihao{3}\CJKfamily{ktGB2312}\bfseries #1}}}
+
+\newcommand{\Mcc}[1]{\makebox[\RightLength][c]{{\zihao{4}\songti #1}}}
+
+\newcommand{\maketitlepage}{%
+	\thispagestyle{empty}
+
+	\begin{center}
+		~
+		\vskip 12mm\relax
+
+		{
+			{\includegraphics[width = .5\textwidth]{SDUWords.pdf}}\\[10mm]
+    			{\fontsize{62}{74}\selectfont\scalebox{0.68}{ \fzbHei{}\the\CThesisType}}\\
+		}
+  
+		{
+			\begin{flushleft}
+                    {
+                    \zihao{3}\songti{}论文（设计）题目：~~ 
+                    \vspace{0.5em}
+                    \zihao{2}\heiti\bfseries\the\Ctitle
+                    }
+                \end{flushleft}
+
+            
+		}
+
+		\vfill
+		{
+			\begin{tabular}{p{\LeftLength}p{\RightLength}}
+				\Mcs{姓名}& \Mcc{\the\Cauthor}\\[-.8mm]\cline{2-2}\\[-4mm]
+				\Mcs{学号}& \Mcc{\the\StuNum}\\[-.8mm]\cline{2-2}\\[-4mm]
+				\Mcs{学院}& \Mcc{\the\Dpart}\\[-.8mm]\cline{2-2}\\[-4mm]
+				\Mcs{专业}& \Mcc{\the\Cmajor}\\[-.8mm]\cline{2-2}\\[-4mm]
+				\Mcs{年级}& \Mcc{\the\Grade}\\[-.8mm]\cline{2-2}\\[-4mm]
+				\Mcs{指导教师}& \Mcc{\the\Csuperver}\\[-.8mm]\cline{2-2}\\[-4mm]
+			\end{tabular}
+		}
+		\par \vskip 20mm \relax
+		{
+			\zihao{3}\CJKfamily{ktGB2312}\bfseries \the\Cdate
+		}
+	\end{center}
+	\clearpage
+}
