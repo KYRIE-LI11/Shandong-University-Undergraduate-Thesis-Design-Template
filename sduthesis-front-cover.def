@@ -38,13 +38,18 @@
 		}
   
 		{
-			\begin{flushleft}
-                    {
-                    \zihao{3}\songti{}论文（设计）题目：~~ 
-                    \vspace{0.5em}
-                    \zihao{-2}\heiti\bfseries\the\Ctitle
-                    }
-                \end{flushleft}
+		
+		                \begin{flushleft}
+		                    {\zihao{3}\songti 论文（设计）题目：}
+		                \end{flushleft}
+		                
+		                \begin{center}
+		                    {\zihao{-2}\heiti\bfseries \the\Ctitle}
+		                \end{center}
+		                
+		                \begin{center}
+		                    {\zihao{3}\heiti \bfseries \the\Etitle}
+		                \end{center}
 
             
 		}
