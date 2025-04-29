@@ -2,7 +2,7 @@
 
 本论文模板在 CTex环境下编译通过。
 
-本模板可在overleaf上运行，若使用本地编译器，<span style="color:red;">引文的编译请使用Biber！</span>
+本模板可在overleaf上运行(需要在菜单中选择XeLatex，tex live版本选2024)，若使用本地编译器，<span style="color:red;">引文的编译请使用Biber！</span>
 
 本项目主要改进:
 
