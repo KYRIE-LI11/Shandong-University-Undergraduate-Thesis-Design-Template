@@ -42,7 +42,7 @@
                     {
                     \zihao{3}\songti{}论文（设计）题目：~~ 
                     \vspace{0.5em}
-                    \zihao{2}\heiti\bfseries\the\Ctitle
+                    \zihao{-2}\heiti\bfseries\the\Ctitle
                     }
                 \end{flushleft}
 
