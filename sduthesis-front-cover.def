@@ -4,6 +4,7 @@
 \newtoks\StuNum		     % 学号
 \newtoks\CThesisType     % 论文类型 中
 \newtoks\Ctitle		     % 中文标题
+\newtoks\Etitle		     % 英文标题
 \newtoks\Cauthor	     % 作者中文名
 \newtoks\Cmajor		     % 专业
 \newtoks\Csuperver	     % 导师
