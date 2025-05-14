@@ -268,8 +268,15 @@
 %--section
 % \CTEXsetup[name={$\S$\,,}]{section} % 去掉章节前的双S花符号
 \CTEXsetup[format={\bfseries\flushleft\zihao{4}}]{section}
-\CTEXsetup[beforeskip={0.5\baselineskip}]{section}
-\CTEXsetup[afterskip={0.5\baselineskip}]{section}
+\CTEXsetup[beforeskip={0.5\baselineskip}]{section}%节标题前的垂直间距为0.5倍行距
+\CTEXsetup[afterskip={0.5\baselineskip}]{section} % 节标题后的垂直间距为0.5倍行距
+
+% 设置节标题的前后间距
+\CTEXsetup[beforeskip={0.5\baselineskip}]{subsection} % 节标题前的垂直间距为0.5倍行距
+\CTEXsetup[afterskip={0.5\baselineskip}]{subsection} % 节标题后的垂直间距为0.5倍行距
+\CTEXsetup[beforeskip={0.5\baselineskip}]{subsubsection} % 节标题前的垂直间距为0.5倍行距
+\CTEXsetup[afterskip={0.5\baselineskip}]{subsubsection} % 节标题后的垂直间距为0.5倍行距
+
 %--subsection
 \CTEXsetup[format={\bfseries\flushleft\zihao{-4}}]{subsection}
 %--subsubsection
