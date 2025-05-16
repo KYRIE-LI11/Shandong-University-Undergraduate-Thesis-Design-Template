@@ -130,10 +130,26 @@
 %----编号----
 %----不浮动----
 \makeatletter
+\usepackage{caption}
+
+% 改变表格编号格式为 "表 1-2"
+\usepackage{caption}
+
+% 修改表格编号格式为 "1-1"（章节-表号）
+\renewcommand{\thetable}{\arabic{section}-\arabic{table}}	
+% 设置表格标题格式：编号和标题之间用空格
+\captionsetup[table]{labelsep=space}
+
+% 自定义 \tabcaption 命令
+\makeatletter
+\newcommand{\tabcaption}{%
+  \def\@captype{table}%
+  \captionsetup{labelsep=space}%
+  \caption}
+\makeatother
+
 \newcommand{\figcaption}{\def\@captype{figure}\captionsetup{labelsep=space}\caption}
-\newcommand{\tabcaption}{\def\@captype{table}\captionsetup{labelsep=space}\caption}
-% \newcommand{\figcaption}{\def\@captype{figure}\caption}
-% \newcommand{\tabcaption}{\def\@captype{table}\caption}
+%\newcommand{\tabcaption}{\def\@captype{table}\captionsetup{labelsep=space}\caption}
 \makeatother
 %----不浮动----
 %------图表支持------
