@@ -111,6 +111,9 @@
 \newcommand*{\HUA}[1]{\ensuremath{\mathscr{{#1}}}} 		%输出花体字母
 \newcommand*{\SHUANG}[1]{\ensuremath{\mathbb{{#1}}}}	%输出双线字母
 \numberwithin{equation}{chapter}						%公式编号随section变化
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+
+
 %------数学支持------
 
 %------图表支持------
