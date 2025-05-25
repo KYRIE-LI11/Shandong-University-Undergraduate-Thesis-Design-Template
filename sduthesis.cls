@@ -141,18 +141,30 @@
 % 修改表格编号格式为 "1-1"（章节-表号）
 \renewcommand{\thetable}{\arabic{section}-\arabic{table}}	
 % 设置表格标题格式：编号和标题之间用空格
-\captionsetup[table]{labelsep=space}
+\captionsetup[table]{
+  labelsep=space,
+  labelfont={bf},
+  textfont={bf},
+  font=small
+}
 
 % 自定义 \tabcaption 命令
 \makeatletter
 \newcommand{\tabcaption}{%
   \def\@captype{table}%
-  \captionsetup{labelsep=space}%
+  \captionsetup{labelsep=space},%
+
   \caption}
 \makeatother
 
+\captionsetup[figure]{
+  labelsep=space,
+  labelfont={bf},
+  textfont={bf},
+  font=small
+}
 \newcommand{\figcaption}{\def\@captype{figure}\captionsetup{labelsep=space}\caption}
-%\newcommand{\tabcaption}{\def\@captype{table}\captionsetup{labelsep=space}\caption}
+
 \makeatother
 %----不浮动----
 %------图表支持------
